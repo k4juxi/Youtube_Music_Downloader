@@ -26,8 +26,8 @@ dashboard_mesaj = '''
 '''
 print(dashboard_mesaj)
 
-hedef_klasor = input("İndirilecek klasörün yolu:  \n\nExample:/home/developer/Desktop/musics/  \n\n:")
-hedef_klasor = "/home/vysl/Desktop/müzikler/"
+hedef_klasor = input("İndirilecek klasörün yolu:  \n\nExample:/home/developer/Desktop/musics/\n\n      :")
+
 
 sarki = input("Şarkı adını giriniz: ")
 url = "https://www.youtube.com/results?search_query="+sarki
