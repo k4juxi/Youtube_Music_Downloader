@@ -8,6 +8,25 @@ import subprocess
 import ffmpeg
 import re
 import time
+
+dashboard_mesaj = '''
+
+    __     __      _______    _            _____                      _                 _
+    \ \   / /     |__   __|  | |          |  __ \                    | |               | |
+     \ \_/ /__  _   _| |_   _| |__   ___  | |  | | _____      ___ __ | | ___   __ _  __| | ___ _ __
+      \   / _ \| | | | | | | | '_ \ / _ \ | |  | |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` |/ _ \ '__|
+       | | (_) | |_| | | |_| | |_) |  __/ | |__| | (_) \ V  V /| | | | | (_) | (_| | (_| |  __/ |
+       |_|\___/ \__,_|_|\__,_|_.__/ \___| |_____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|\___|_|
+
+
+                     YouTube Mp3/Mp4 Downloader | Twitter: @k4juxi
+
+                                Developer: Veysel BAY
+
+'''
+print(dashboard_mesaj)
+
+hedef_klasor = input("İndirilecek klasörün yolu:  \n\nExample:/home/developer/Desktop/musics/  \n\n:")
 hedef_klasor = "/home/vysl/Desktop/müzikler/"
 
 sarki = input("Şarkı adını giriniz: ")
@@ -47,8 +66,8 @@ if sec == "2":
     t.download(hedef_klasor)
 
     for dosya in [n for n in os.listdir(hedef_klasor) if re.search('mp4',n)]:
-        buldum=dosya
-    os.rename(hedef_klasor+buldum,hedef_klasor+"video.mp4")
+        bul=dosya
+    os.rename(hedef_klasor+bul,hedef_klasor+"video.mp4")
     #MP3'E çevirme
     mp4 = ("%s.mp4" %(hedef_klasor+'video'))
     mp3 = ("%s.mp3" %(hedef_klasor+'video2'))
