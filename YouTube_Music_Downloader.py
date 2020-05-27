@@ -26,7 +26,7 @@ dashboard_mesaj = '''
 '''
 print(dashboard_mesaj)
 
-hedef_klasor = input("İndirilecek klasörün yolu:  \n\nExample:/home/developer/Desktop/musics/\n\n      :")
+hedef_klasor = input("İndirilecek klasörün yolu:  \n\nExample:/home/developer/Desktop/musics/\n\n                         :")
 
 
 sarki = input("Şarkı adını giriniz: ")
@@ -35,13 +35,13 @@ sayfa = requests.get(url)
 parset = BeautifulSoup(sayfa.content, 'html.parser')
 sarkilar = []
 linkler = []
-for i in range(20):
+for i in range(8):
     for a in parset.find_all('a', title=True,href=True):
         if a['href'][:2] == "/w":
             sarkilar.append(a['title'])
             linkler.append(a['href'])
 
-for i in range(20):
+for i in range(8):
     print(i+1,"-",sarkilar[i])
 secim = int(input("İndirilecek Müziği seçin: "))
 os.system('cls' if os.name == 'nt' else 'clear')

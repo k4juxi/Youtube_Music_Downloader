@@ -1,5 +1,4 @@
-BeautifulSoup
+beautifulSoup4
 ffmpeg
-subprocess
 requests
-YouTube
+pytube==6.0.1
