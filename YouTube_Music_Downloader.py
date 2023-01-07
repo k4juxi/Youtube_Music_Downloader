@@ -19,9 +19,9 @@ dashboard_mesaj = '''
        |_|\___/ \__,_|_|\__,_|_.__/ \___| |_____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|\___|_|
 
 
-                     YouTube Mp3/Mp4 Downloader | Twitter: @k4juxi
+                     YouTube Mp3/Mp4 Downloader | Twitter: -
 
-                                Developer: Veysel BAY
+                                Developer: -
 
 '''
 print(dashboard_mesaj)
